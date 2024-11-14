@@ -1,4 +1,4 @@
-FROM gcewebmkt/python-base:3.11-slim AS base
+FROM aliciousness/python-base:3.11-slim AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
