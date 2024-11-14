@@ -9,5 +9,5 @@ app = FastAPI()
 
 @app.get("/")
 async def read_root():
-    message = f"Hello world! From GCE DevOps with Gunicorn from Uvicorn (insert unicorn emoji here)! Using Python {version}"
+    message = f"Hello world! From DevOps with Gunicorn from Uvicorn (insert unicorn emoji here)! Using Python {version}"
     return {"message": message}
