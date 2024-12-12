@@ -47,7 +47,7 @@ jobs:
           docker build -t scan:${{ env.slug }} -f ${{ env.dockerfile_path }} .
 
       - name: Scan Docker image with Trivy
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.29.0
         with:
           image-ref: scan:${{ env.slug }}
           format: "template"
@@ -90,7 +90,7 @@ jobs:
           echo "slug=${short_slug}" >> $GITHUB_ENV
 
       - name: Scan filesystem with Trivy
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.29.0
         with:
           scan-type: "fs"
           format: "template"
