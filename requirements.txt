@@ -2,7 +2,7 @@ uvicorn[standard]==0.29.0
 gunicorn==22.0.0
 fastapi[all]==0.110.3
 python-dotenv==1.0.1
-pydantic==2.8.0
+pydantic==2.10.3
 transformers==4.42.3
 tensorflow==2.16.2
 tf-keras==2.16.0 # This is a backwards compatible version of TensorFlow Keras for the version of transformers we are using
