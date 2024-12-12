@@ -51,7 +51,7 @@ jobs:
         with:
           image-ref: scan:${{ env.slug }}
           format: "template"
-          template: "@trivy/template_md.tpl"
+          template: "trivy/template_md.tpl"
           output: "trivy_report.md"
           ignore-unfixed: false
           severity: "HIGH,CRITICAL"
@@ -94,7 +94,7 @@ jobs:
         with:
           scan-type: "fs"
           format: "template"
-          template: "@trivy/template_md.tpl"
+          template: "trivy/template_md.tpl"
           output: "trivy_fs_report.md"
           ignore-unfixed: true
           scanners: "vuln,secret,config"
