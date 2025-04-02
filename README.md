@@ -1,12 +1,18 @@
 # Docker-uvicorn-gunicorn
+[![Docker Pulls](https://img.shields.io/badge/Docker%20Pulls-381-blue)](https://hub.docker.com/r/aliciousness/uvicorn-gunicorn)
+[![Latest Release](https://img.shields.io/badge/release-v0.3.5-brightgreen)](https://github.com/aliciousness/ACTION-latest-release-badge/releases)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aliciousness)
+<!-- [![Docker Image Size (tag)]() -->
+<!-- ![Build Status](https://img.shields.io/github/actions/workflow/status/aliciousness/uvicorn-gunicorn/release.yml?branch=main)]
+[![GitHub last commit](https://img.shields.io/badge/Last%20Commit-2024-11-08-yellow)] -->
 
 [**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by me for high-performance [**FastAPI**](https://fastapi.tiangolo.com/) web applications in **[Python](https://www.python.org/)** with performance auto-tuning.
 
 # Supported tags and respective Dockerfile links
 
-- [`v0.0.1-3.11-bookworm-slim-python`, `v0.0.1`, `v3.11-slim`, `latest`]
+- [`v0.2.0-3.12-bookworm-slim-python`, `v0.2.0`, `v3.12-slim`, `latest`]
 
-- [`v0.0.1-3.11-bookworm-python`, `v3.11-debian`]
+- [`v0.2.0-3.12-bookworm-python`, `v3.12-debian`]
 
 ## Features
 
