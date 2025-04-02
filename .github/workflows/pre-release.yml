@@ -62,8 +62,3 @@ jobs:
             -t aliciousness/uvicorn-gunicorn:prerelease-${{ env.TAG }} \
             -f  ${{env.dockerfile_path}} \
             --push .
-
-      - name: Tag just preleasse
-        run: |
-          docker tag aliciousness/uvicorn-gunicorn:prerelease-${{ env.TAG }} aliciousness/uvicorn-gunicorn:prerelease
-          docker push aliciousness/uvicorn-gunicorn:prerelease

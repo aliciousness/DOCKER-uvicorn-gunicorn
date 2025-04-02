@@ -1,4 +1,6 @@
-FROM aliciousness/python-base:3.13-slim AS base
+# FROM aliciousness/python-base:3.11-slim AS base
+# prerelease image
+FROM aliciousness/python-base:prerelease-v0.2.0-beta.1 AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
