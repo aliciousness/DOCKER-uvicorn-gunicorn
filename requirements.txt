@@ -1,6 +1,6 @@
 uvicorn[standard]==0.34.0
 gunicorn==22.0.0
-fastapi[all]==0.110.3
+fastapi[all]==0.115.12
 python-dotenv==1.1.0
 pydantic==2.11.1
 transformers==4.50.3
