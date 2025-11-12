@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.12"]
-        variant: ["bookworm-slim"]
+        python-version: ["3.13"]
+        variant: ["trixie-slim"]
 
     steps:
       - name: Checkout repository
