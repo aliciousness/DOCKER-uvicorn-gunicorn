@@ -1,6 +1,6 @@
 # Docker-uvicorn-gunicorn
 [![Docker Pulls](https://img.shields.io/badge/Docker%20Pulls-381-blue)](https://hub.docker.com/r/aliciousness/uvicorn-gunicorn)
-[![Latest Release](https://img.shields.io/badge/release-v0.2.0-brightgreen)](https://github.com/aliciousness/ACTION-latest-release-badge/releases)
+[![Latest Release](https://img.shields.io/badge/release-v0.4.0-brightgreen)](https://github.com/aliciousness/ACTION-latest-release-badge/releases)
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aliciousness)
 <!-- [![Docker Image Size (tag)]() -->
 <!-- ![Build Status](https://img.shields.io/github/actions/workflow/status/aliciousness/uvicorn-gunicorn/release.yml?branch=main)]
