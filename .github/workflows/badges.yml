@@ -7,8 +7,8 @@ on:
     - cron: "0 0 1 * *"
   workflow_dispatch:
 env:
-  DOCKER_URL: https://hub.docker.com/r/aliciousness/python-base
-  DOCKER_API: https://hub.docker.com/v2/repositories/aliciousness/python-base
+  DOCKER_URL: https://hub.docker.com/r/aliciousness/uvicorn-gunicorn
+  DOCKER_API: https://hub.docker.com/v2/repositories/aliciousness/uvicorn-gunicorn
   BUILD_ID: ${{ github.run_id }}
 jobs:
   update-readme:
