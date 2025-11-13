@@ -2,11 +2,20 @@ import json
 import multiprocessing
 import os
 
+
+def safe_int(value, default):
+    """Safely convert a string to int, returning default if conversion fails."""
+    try:
+        return int(value)
+    except (ValueError, TypeError):
+        return default
+
+
 workers_per_core_str = os.getenv("WORKERS_PER_CORE", "1")
 max_workers_str = os.getenv("MAX_WORKERS")
 use_max_workers = None
 if max_workers_str:
-    use_max_workers = int(max_workers_str)
+    use_max_workers = safe_int(max_workers_str, None)
 web_concurrency_str = os.getenv("WEB_CONCURRENCY", None)
 
 host = os.getenv("HOST", "0.0.0.0")
@@ -23,7 +32,7 @@ cores = multiprocessing.cpu_count()
 workers_per_core = float(workers_per_core_str)
 default_web_concurrency = workers_per_core * cores
 if web_concurrency_str:
-    web_concurrency = int(web_concurrency_str)
+    web_concurrency = safe_int(web_concurrency_str, max(int(default_web_concurrency), 2))
     assert web_concurrency > 0
 else:
     web_concurrency = max(int(default_web_concurrency), 2)
@@ -44,9 +53,9 @@ bind = use_bind
 errorlog = use_errorlog
 worker_tmp_dir = "/dev/shm"
 accesslog = use_accesslog
-graceful_timeout = int(graceful_timeout_str)
-timeout = int(timeout_str)
-keepalive = int(keepalive_str)
+graceful_timeout = safe_int(graceful_timeout_str, 120)
+timeout = safe_int(timeout_str, 120)
+keepalive = safe_int(keepalive_str, 5)
 
 
 # For debugging and testing
